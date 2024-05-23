@@ -1,0 +1,95 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#003554;
+            color: #333; /* Couleur de texte par défaut */
+        }
+
+        .profile {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'YourChosenFont', Arial, sans-serif;
+            color: #4CAF50; /* Couleur verte */
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ombre portée */
+            background: linear-gradient(to right, #ff9966, #ff5e62); /* Dégradé */
+            -webkit-background-clip: text; /* Clip le dégradé pour le texte */
+            -webkit-text-fill-color: black; /* Permet au texte de conserver sa couleur d'origine */
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: #003554;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+            color: #555; /* Couleur de texte par défaut */
+        }
+
+        .contact-details {
+            margin-top: 10px;
+        }
+
+        .contact-details p {
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #555; /* Couleur de texte */
+        }
+
+        .contact-symbol {
+            color: black;
+            margin-right: 5px;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .location-rectangle {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #fff;
+            font-weight: bold;
+            color: #333; /* Couleur de texte */
+        }
+
+        .point {
+            display: inline-block;
+            margin-right: 5px;
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Rend la photo de profil ronde */
+            margin: 0 auto 20px;
+            display: block;
+            background-color: #ccc;
+            object-fit: cover; /* Ajuste la taille de l'image pour remplir le conteneur rond */
+        }

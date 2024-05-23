@@ -1,0 +1,142 @@
+
+.menu-btn {
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 90px;
+    z-index: 9999;
+    outline: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+    top: 80px;
+    right: 90px;
+}
+
+.menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.menu li a i {
+    margin-right: 10px;
+}
+
+.menu li a:hover {
+    background-color: #f1f1f1;
+}
+
+#menu-toggle:checked + .menu {
+    display: block;
+}
+
+#menu-toggle {
+    display: none;
+    appearance: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #666;
+}
+
+.card a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a.save-btn {
+    background-color: #03A64A;
+}
+
+.card a.disabled {
+    background-color: #ccc;
+    pointer-events: none;
+}
+
+.search-container {
+    position: relative;
+}
+
+.recherche {
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background-color: #eee;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.error-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-link, .icon-linkp, .icon-linko, .icon-linka {
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}

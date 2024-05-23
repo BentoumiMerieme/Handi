@@ -1,0 +1,265 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* .container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background:#eee;
+  display:flex;
+  justify-content: center;
+} */
+
+.custom-row {
+    display: flex;
+  flex-wrap: nowrap;
+  margin-right: -15px;
+  margin-left: -15px;
+ 
+  flex-wrap: wrap;
+}
+
+.custom-col {
+  
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: #022952;
+}
+@media (min-width: 576px) {
+    .custom-col {
+        width: 25%;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+  }
+  
+@media (min-width: 1200px) {
+    .custom-col {
+        width: 16.66667%;
+    }
+  }
+
+.custom-flex {
+  /* justify-content: space-between; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  color: #fff;
+  min-height: 100vh;
+}
+@media (min-width: 576px) {
+    .custom-flex {
+        align-items: flex-start;
+    }
+  }
+
+.custom-flex2 {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.75rem; 
+  margin-bottom: 0.25rem; 
+  margin-top: 1rem; 
+  margin-right: auto; 
+  color: #fff;
+  text-decoration: none;
+}
+
+.imglogo {
+  width: 30px;
+  height: auto;
+  margin-right: 5px; 
+}
+.customb {
+    font-size: 1.25rem; 
+    display: none; 
+  }
+  
+  @media (min-width: 576px) {
+    .customb {
+        display: inline !important; 
+    }
+  }
+
+
+  .custom-nav {
+    display: flex;
+    flex-direction: column;
+ list-style: none;
+padding-left: 0; 
+    margin-bottom: 0;
+    /* list-style-type: none;
+  padding: 0;
+  margin: 0; */
+  align-items: center;
+  }
+  @media (min-width: 576px) {
+    .custom-nav {
+        align-items: flex-start; /* Align items to the start on small screens and above */
+    }
+}
+  .custom-nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    /* color: inherit; */
+    text-decoration: none;
+  }
+  
+  .custom-nav .nav-link.active {
+    color: #fff;
+    background-color: #007bff;
+  }
+
+
+.nav-item {
+  margin-bottom: 10px;
+  align-items: flex-start;
+  width: 100%;
+ 
+
+
+}
+
+.customv {
+display: inline !important; 
+margin-left: 0.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.colp {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  padding: 0; 
+  margin: 0; 
+}
+
+.offf h4 {
+    padding: 0.5rem; /* Rembourrage de 0.5rem */
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Ombre de boîte */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+
+.custom-col {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    /* background-color: #343a40; */
+  }
+  
+  @media (min-width: 576px) {
+    .custom-col {
+        width: 25%;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .custom-col {
+        width: 16.66667%;
+    }
+  }
+  #classw{
+    color: #fff;
+    padding-right: 0; 
+    padding-left: 0; 
+    vertical-align: middle; 
+  }
+  
+  .custom-visibility {
+    display: none; /* Masquer l'élément par défaut */
+  }
+  
+  .custom-inline {
+    display: inline !important; /* Afficher en ligne */
+  }
+  
+  .custom-margin-left {
+    margin-left: 0.5rem; /* Marge gauche de 0.5rem */
+  }
+.nav-link{
+    padding-right: 0; /* Remove right padding */
+    padding-left: 0; /* Remove left padding */
+    vertical-align: middle;
+}
+.button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  
+  #delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  .custol{
+    text-align: center; /* Center text */
+    padding-bottom: 0.25rem; /* Padding bottom of 0.25rem (equivalent to pb-1) */
+}
+.classf{
+    display: flex; /* Flex container */
+    justify-content: center; /* Center items along the main axis */
+}
+.mt-3 {
+    margin-top: 0.75rem; /* Equivalent to mt-3 */
+}
+.tablecontainer {
+    display: flex;
+    justify-content: center;
+
+    height: 100vh; /* Make the container full height of the viewport */
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 20px;
+  }
+  
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

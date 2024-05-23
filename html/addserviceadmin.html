@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      rel="icon"
+      href="\project2024l3\img\logo.png"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="\project2024l3\css\addserviceadmin.css" />
+    <script src="\project2024l3\js\addserviceadmin.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="custom-box">
+        <h2 class="title">Ajouter Service</h2>
+        <form
+          onSubmit=""
+          method="post"
+          action="\project2024l3\php\addserviceadmin.php"
+          onsubmit="return validateForm();"
+        >
+          <div class="form-group">
+            <label htmlFor="service">
+              <strong>Service:</strong>
+            </label>
+            <input
+              type="text"
+              name="service"
+              placeholder="Entre Service"
+              onChange=""
+            />
+          </div>
+          <button class="button" name="button" value="Submit">
+            Ajouter Service
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

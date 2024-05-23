@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      rel="icon"
+      href="\project2024l3\img\logo.png"
+      type="image/icon type"
+    />
+    <link rel="stylesheet" href="\project2024l3\css\statistiqueadmin.css" />
+    <!-- <link rel="stylesheet" href="\project2024l3\css\homeadmin.css" /> -->
+  </head>
+
+  <body>
+    <div className="container-fluid">
+      <div class="custom-row">
+        <div class="custom-col">
+          <div class="custom-flexx">
+            <a href="\project2024l3\html\homeadmin.html" class="custom-flex2">
+              <span class="customb">
+                <img class="imglogo" src="\project2024l3\img\logo.png" alt="" />
+                Handi
+              </span>
+            </a>
+            <ul class="custom-nav" id="menu">
+              <li class="nav-item">
+                <a
+                  href="\project2024l3\html\statistiqueadmin.html"
+                  class="nav-link"
+                  id="classw"
+                >
+                  <!-- <i class="fs"></i> -->
+                  <span class="customv">statistique</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="\project2024l3\html\adminlisteemployee.php"
+                  id="classw"
+                  class="nav-link"
+                >
+                  <!-- <i class="fsb"></i> -->
+                  <span class="customv"> Liste Employees </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="\project2024l3\html\listeserviceadmin.php"
+                  id="classw"
+                  class="nav-link"
+                >
+                  <!-- <i className="fs-4 bi-columns ms-2"></i> -->
+                  <span class="customv">Service</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="\project2024l3\html\profiladmin.html"
+                  id="classw"
+                  class="nav-link"
+                >
+                  <!-- <i className="fs-4 bi-person ms-2"></i> -->
+                  <span class="customv">Profil</span>
+                </a>
+              </li>
+              <li class="nav-item" onClick="">
+                <a id="classw" class="nav-link">
+                  <!-- <i className="fs-4 bi-power ms-2"></i> -->
+                  <span class="customv">Se déconnecter</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="colp">
+          <div class="offf">
+            <h4>Offre Service pour Clients</h4>
+            <div class="custom-container">
+              <div class="custom-box">
+                <div class="custom-text">
+                  <h4>Admin</h4>
+                </div>
+                <hr />
+                <div class="custom-flex">
+                  <h5>Total:</h5>
+                  <h5>adminTotal</h5>
+                </div>
+              </div>
+              <div class="custom-box">
+                <div class="custom-text">
+                  <h4>Employee</h4>
+                </div>
+                <hr />
+                <div class="custom-flex">
+                  <h5>Total:</h5>
+                  <h5>employeeTotal</h5>
+                </div>
+              </div>
+              <div class="custom-box">
+                <div class="custom-text">
+                  <h4>Salary</h4>
+                </div>
+                <hr />
+                <div class="custom-flex">
+                  <h5>Total:</h5>
+                  <h5>salaryTotal</h5>
+                </div>
+              </div>
+            </div>
+            <div class="customm">
+              <h3>Liste of Admin</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Email</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>email admin</td>
+                    <td>
+                      <button class="button" id="edit-button">Edit</button>
+                      <button class="button" id="delete-button">Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </div>
+          <Outlet />
+        </div>
+      </div>
+    </div>
+    <div>
+      
+  </body>
+</html>

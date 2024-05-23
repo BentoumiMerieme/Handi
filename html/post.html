@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creation de Post</title>
+    <link
+      rel="icon"
+      href="\project2024l3\img\logo.png"
+      type="image/icon type"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e9efff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        width: 400px;
+      }
+      .form-header {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+      }
+      textarea,
+      input[type="file"],
+      select,
+      button {
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+      textarea {
+        height: 200px; /* Hauteur fixe */
+        resize: none; /* Empêche le redimensionnement */
+      }
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+        color: #fff;
+      }
+      .icon-button {
+        padding: 10px;
+        width: auto;
+        background: none;
+        border: none;
+        color: #007bff;
+        cursor: pointer;
+        display: inline-block;
+      }
+      .icon-button:hover {
+        color: #f3f5f6;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="postForm">
+      <h2 class="form-header">Creation de Post</h2>
+      <textarea
+        id="postContent"
+        placeholder="écrivez quelques choses...!"
+      ></textarea>
+
+      <!-- Hidden file inputs for photo and video -->
+      <input
+        type="file"
+        id="postImage"
+        accept="image/*"
+        style="display: none"
+      />
+      <input
+        type="file"
+        id="postVideo"
+        accept="video/*"
+        style="display: none"
+      />
+      <!-- Input for feeling and location -->
+      <!-- <input
+        type="text"
+        id="postFeeling"
+        placeholder="How are you feeling?"
+        style="display: none"
+      />
+      <input
+        type="text"
+        id="postLocation"
+        placeholder="Where are you?"
+        style="display: none"
+      /> -->
+
+      <!-- Icon buttons -->
+      <button
+        type="button"
+        class="icon-button"
+        onclick="document.getElementById('postImage').click();"
+        title="Add Photo"
+      >
+        <i class="fas fa-camera"></i>
+      </button>
+      <button
+        type="button"
+        class="icon-button"
+        onclick="document.getElementById('postVideo').click();"
+        title="Add Video"
+      >
+        <i class="fas fa-video"></i>
+      </button>
+      <!-- <button
+        type="button"
+        class="icon-button"
+        onclick="toggleInput('postFeeling');"
+        title="Add Feeling"
+      >
+        <i class="fas fa-smile"></i>
+      </button>
+      <button
+        type="button"
+        class="icon-button"
+        onclick="toggleInput('postLocation');"
+        title="Check In"
+      >
+        <i class="fas fa-map-marker-alt"></i>
+      </button> -->
+
+      <button type="submit">Post</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

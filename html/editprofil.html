@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="\project2024l3\css\codecss1.css" />
+
+    <link rel="stylesheet" href="\project2024l3\css\editprofill.css" />
+    <script src="\project2024l3\js\codejs2.js"></script>
+    <script src="\project2024l3\js\codejs1.js"></script>
+
+    <title>EDIT_PROFIL</title>
+
+    <link
+      rel="icon"
+      href="\project2024l3\img\logo.png"
+      type="image/icon type"
+    />
+    <script src="\project2024l3\js\editprofill.js"></script>
+  </head>
+
+  <body>
+    <form method="post" action="editprofil.php">
+      <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+          <div class="col-md-3 border-right">
+            <div
+              class="d-flex flex-column align-items-center text-center p-3 py-5"
+            >
+              <img
+                class="rounded-circle mt-5"
+                width="150px"
+                src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg"
+              />
+              <span class="font-weight-bold">Merieme</span>
+              <span class="text-black-50"><?php echo $_GET['email']; ?></span>
+              <span> </span>
+            </div>
+          </div>
+          <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+              <div class="erreur-text">message d'erreur!</div>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h4 class="text-right">Paramètres de profil</h4>
+              </div>
+              <div class="row mt-2">
+                <div class="col-md-6">
+                  <label class="labels" for="nom">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\user.png"
+                      alt=""
+                    />
+                    Nom & Prenom
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entrez Nom et Prenom"
+                    name="nom"
+                    id="nom"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\user.png"
+                      alt=""
+                    />
+                    Nom de célébrité</label
+                  ><input
+                    type="text"
+                    class="form-control"
+                    name="nomcelebrite"
+                    id="nomc"
+                    value=""
+                    placeholder="Entrez Nom de célébrité"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels" for="mpt">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\password.png"
+                      alt=""
+                    />
+                    Mot de passe
+                  </label>
+                  <input
+                    type="password"
+                    name="mpt"
+                    class="form-control"
+                    placeholder="Entrez le mot de passe"
+                    id="password"
+                    value=""
+                  />
+                  <div class="power-container">
+                    <div id="power-point"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\password.png"
+                      alt=""
+                    />
+                    comfirme Mot de passe
+                  </label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="confirme le mot de passe"
+                    id="mpt2"
+                    value=""
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <label class="labels" for="numtel">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\telephone.png"
+                      alt=""
+                    />
+                    Numéro de portable
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entrez Numéro de portable"
+                    name="numtel"
+                    id="numtel"
+                    value=""
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\calendar.png"
+                      alt=""
+                    />
+                    Date de naissance
+                  </label>
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Entrez la date de naissance"
+                    name="datenaiss"
+                    id="datenaiss"
+                    value=""
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\adress.png"
+                      alt=""
+                    />
+                    Adresse
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entrez adresse "
+                    name="adress"
+                    id="adress"
+                    value=""
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\adress.png"
+                      alt=""
+                    />
+                    Wilaya
+                  </label>
+                  <!-- <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entrez adresse "
+                    name="adress"
+                    id="ville"
+                    value=""
+                  /> -->
+                  <input list="ville" />
+                  <datalist id="ville">
+                    <option value="adrar" />
+                    <option value="chelef" />
+                    <option value="laghouat" />
+                    <option value="Oum El Bouaghi" />
+                    <option value="Batna" />
+                    <option value="bejaia" />
+                    <option value="Biskra" />
+                    <option value="bechar" />
+                    <option value="belida" />
+                    <option value="bouira" />
+                    <option value="Tamanrasset" />
+                    <option value="Tebessa" />
+                    <option value="Tlemcen" />
+
+                    <option value="Tiaret" />
+                    <option value="Tizi Ouzou" />
+                    <option value="Alger" />
+                    <option value="Djelfa" />
+                    <option value="Jijel" />
+
+                    <option value="Setif" />
+                    <option value="Saïda" />
+                    <option value="Skikda" />
+                    <option value="Sidi Bel Abbes" />
+                    <option value="Annaba" />
+                    <option value="Guelma" />
+                    <option value="Constantine" />
+                    <option value="Medea" />
+                    <option value="Mostaganem" />
+                    <option value="Msila" />
+                    <option value="Mascara" />
+                    <option value="Ouargla" />
+                    <option value="Oran" />
+                    <option value="El Bayadh" />
+                    <option value="Illizi" />
+                    <option value="Bordj Bou Arreridj" />
+                    <option value="Boumerdes" />
+                    <option value=" El Tarf" />
+                    <option value="Tindouf" />
+                    <option value="Tissemsilt" />
+                    <option value="ElOued" />
+                    <option value="Khenchela" />
+                    <option value="Souk ahras" />
+                    <option value="Tipaza" />
+                    <option value="Mila" />
+                    <option value="Ain Defla" />
+                    <option value="Naama" />
+                    <option value="Ain Temouchent" />
+                    <option value="Ghardaia" />
+                    <option value="Relizane" />
+                    <option value="Timimoun" />
+                    <option value="Bordj Badji Mokhtar" />
+                    <option value="Ouled Djellal" />
+                    <option value="Béni Abbès" />
+                    <option value="Ain Salah" />
+                    <option value="Ain Guezzam" />
+                    <option value="Touggourt" />
+                    <option value="Djanet" />
+                    <option value="El M’Ghaier" />
+                    <option value="El Meniaa" />
+                  </datalist>
+                </div>
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\adress.png"
+                      alt=""
+                    />
+                    CCP
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entrez CCP "
+                    name="ccp"
+                    id="ccp"
+                    value=""
+                  />
+                </div>
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img class="icon" src="\project2024l3\img\ccp.png" alt="" />
+                    Email
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Entrez Email"
+                    name="email"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\gener.png"
+                      alt=""
+                    />
+                    Genre
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" id="male" name="gender" value="male" />
+                  <label for="male">Homme</label>
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female">Femme</label>
+                </div>
+              </div>
+              <div class="mt-5 text-center buttons-container">
+                <button class="button-18" type="button" name="redirectBtn">
+                  Enregistrer le profil
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 py-5">
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels"
+                    ><img
+                      class="icon"
+                      src="\project2024l3\img\text.png"
+                      alt=""
+                    />
+                    Description
+                  </label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Entrez votre description"
+                    id="description"
+                    name="description"
+                  >
+                  </textarea>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center experience"
+              >
+                <span>Modifier l'expérience</span>
+              </div>
+              <br />
+              <div class="col-md-12">
+                <label class="labels">
+                  <img class="icon" src="\project2024l3\img\job.png" alt="" />
+                  Service
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="votre service"
+                  name="service"
+                  id="service"
+                  value=""
+                />
+              </div>
+              <br />
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels">
+                    <img
+                      class="icon"
+                      src="\project2024l3\img\groupe.png"
+                      alt=""
+                    />
+                    Groupe
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" id="oui" name="groupe" value="oui" />
+                  <label for="oui">Oui</label>
+                </div>
+                <div class="col-md-6">
+                  <input type="radio" id="no" name="groupe" value="no" />
+                  <label for="no">No</label>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels"
+                    ><img
+                      class="icon"
+                      src="\project2024l3\img\profile.png"
+                      alt=""
+                    />Photo de profil</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    placeholder="choisir une photo"
+                    id="profilePhoto"
+                    name="image"
+                    accept="image/*"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels"
+                    ><img
+                      class="icon"
+                      src="\project2024l3\img\document.png"
+                      alt=""
+                    />Diplôme (Fichier)</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="diplomaFile"
+                    name="diploma"
+                    accept=".pdf, .doc, .docx"
+                  />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-12">
+                  <label class="labels"
+                    ><img
+                      class="icon"
+                      src="\project2024l3\img\image.png"
+                      alt=""
+                    />Plusieurs photos</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control-file"
+                    id="multiplePhotos"
+                    name="multiplePhotos"
+                    accept="image/*"
+                    multiple
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

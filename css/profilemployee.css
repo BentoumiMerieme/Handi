@@ -1,0 +1,179 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#003554;
+        }
+
+        .profile {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'YourChosenFont', Arial, sans-serif;
+            color: #4CAF50; /* Couleur verte */
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ombre portée */
+            background: linear-gradient(to right, #ff9966, #ff5e62); /* Dégradé */
+            -webkit-background-clip: text; /* Clip le dégradé pour le texte */
+            -webkit-text-fill-color: black; /* Permet au texte de conserver sa couleur d'origine */
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: #003554;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .contact-details {
+            margin-top: 10px;
+        }
+
+        .contact-details p {
+            margin-bottom: 5px;
+        }
+
+        .services {
+            margin-top: 20px;
+        }
+
+        .state {
+            margin-top: 20px;
+        }
+
+        .pictures {
+            margin-top: 20px;
+        }
+
+        .profile {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .contact-details p {
+            color: #555;
+        }
+
+        .download-symbol {
+            font-size: 20px; /* Taille du symbole réduite */
+            color: white;
+            background-color: #3498db;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-symbol:hover {
+            background-color: #2980b9;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            background-color: #ccc;
+        }
+
+        .location-rectangle {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px 10px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            background-color: #fff;
+            font-weight: bold;
+        }
+
+        .point {
+            display: inline-block;
+            margin-right: 5px;
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+
+        .contact-symbol {
+            color: black;
+            margin-right: 5px;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        .evaluation-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            background-color: rgba(4,99,128,0.9);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .evaluation-text {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .pictures-text {
+            font-weight: bold;
+            color: #555; /* Même couleur que "Merci de nous évaluer" */
+        }
+
+        .stars-container {
+            display: flex;
+            justify-content: center; /* Centrage horizontal */
+            margin-top: 20px;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction: row-reverse; /* Affichage de droite à gauche */
+            align-items: center;
+        }
+
+        .stars input[type="radio"] {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 30px;
+            color: #aaa;
+            cursor: pointer;
+        }
+
+        .stars label:hover,
+        .stars label:hover ~ label,
+        .stars input[type="radio"]:checked ~ label {
+            color: #ffcc00;
+        }
